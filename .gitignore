@@ -1,0 +1,12 @@
+/freezeray_ihlt/logs
+/freezeray_ihlt/configs
+/freezeray_ihlt/minidustry
+/freezeray_ihlt/vcpkg_installed
+/x64
+/.vs
+/freezeray_ihlt/x64
+freezeray_ihlt/amnezia-box.exe
+freezeray_ihlt/backends/config.json
+freezeray_ihlt/config.json
+freezeray_ihlt/config.yml
+/freezeray_ihlt/freeze-box
