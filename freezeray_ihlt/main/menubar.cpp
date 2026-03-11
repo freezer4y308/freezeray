@@ -20,7 +20,6 @@ static bool its_showtime = 0;
 
 
 void menubar() {
-    _setmode(_fileno(stdout), _O_U16TEXT);
     extern int init_main();
     extern void settings(bool* p_open);
     static bool show_settings = false;
@@ -61,7 +60,7 @@ void menubar() {
         }
 
         if (ImGui::BeginMenu("\U000F06B0 Help")) {
-            if (ImGui::MenuItem("\uead2 Restart service", "Ctrl+R")) {
+            if (ImGui::MenuItem("\uead2 Software info")) {
                 its_showtime = 1;
             }
  
@@ -81,7 +80,7 @@ void menubar() {
 
     if (its_showtime) {
         ImGui::Begin("About", &its_showtime);
-        ImGui::Text("freezeray pre-alpha (commit 0000000)");
+        ImGui::Text("freezeray v1.0.0-alpha1");
 
         ImGui::End();
     }

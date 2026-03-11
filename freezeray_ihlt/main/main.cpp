@@ -85,14 +85,8 @@ void main_loop() {
         ImGui::End();
 
         if (ImGui::Begin("Status", nullptr, window_flags)) {
-            ImGui::Text("Status: Success i guess");
-            ImGui::Text("Status: Success i guess");
-            ImGui::Text("Status: Success i guess");
-            ImGui::Text("Status: Success i guess");
-            ImGui::Text("Status: Success i guess");
-            ImGui::Text("Status: Success i guess");
-            ImGui::Text("Status: Success i guess");
-            ImGui::Text("Status: Success i guess");
+            ImGui::Text("TODO");
+
         }
         ImGui::End();
 

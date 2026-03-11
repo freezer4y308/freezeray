@@ -128,4 +128,9 @@
     <None Include="vcpkg-configuration.json" />
     <None Include="vcpkg.json" />
   </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\resources\resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
 </Project>
