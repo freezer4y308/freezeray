@@ -2,7 +2,7 @@
 #include <commdlg.h>
 #include <string>
 #include <shellapi.h>
-#define ulong64_t long long
+#define ulong64_t unsigned long long // Genius.
 
 std::string OpenFileDialog() {
     OPENFILENAMEA ofn;
@@ -10,7 +10,7 @@ std::string OpenFileDialog() {
 
     ZeroMemory(&ofn, sizeof(ofn));
     ofn.lStructSize = sizeof(ofn);
-    ofn.hwndOwner = NULL;
+    ofn.hwndOwner = NULL; // Declare some "hwnd owner" (idk what it is, it's just needed)
     ofn.lpstrFile = szFile;
     ofn.nMaxFile = sizeof(szFile);
     ofn.lpstrFilter = "VPN configs\0*.json\0";
@@ -19,10 +19,10 @@ std::string OpenFileDialog() {
     ofn.nMaxFileTitle = 0;
     ofn.lpstrInitialDir = NULL;
     ofn.Flags = OFN_PATHMUSTEXIST | OFN_FILEMUSTEXIST | OFN_NOCHANGEDIR;
-    unsigned ulong64_t szFileLen = strlen(szFile);
+    ulong64_t szFileLen = strlen(szFile);
 
     if (szFileLen > 260) {
-        return "";
+        return ""; // Additional security won't be excess
     }
     if (GetOpenFileNameA(&ofn) == TRUE) {
         return std::string(ofn.lpstrFile);

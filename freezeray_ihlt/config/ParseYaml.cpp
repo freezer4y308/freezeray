@@ -21,7 +21,7 @@ namespace fs = std::filesystem;
 string confname = "config.yml";
 bool firstlaunch;
 extern bool logsEnabled;
-
+string language;
 
 int fyamlparser::YAMLCheckConfig() {
 	if (!fs::is_regular_file(confname) && fs::exists(confname)) {
@@ -43,8 +43,22 @@ int fyamlparser::YAMLCheckConfig() {
 char fyamlparser::YAMLLoadFiles() {
 	int UserIsStupid = 173;
 	int isSuccess = fyamlparser::YAMLCheckConfig();
+
 	if (isSuccess == 0) {
 		YAML::Node config = YAML::LoadFile(confname);
+
+
+		/*
+
+		TODO: Punch author of yaml-cpp library because he forced me to make this yanderedev-like if else
+		mess. And also authors of C++ because for some reason you can't use strings in switch cases. Well,
+		technically, you can use char, but the code just crashes if i use it lmao
+
+		UPD: Oh! Fuck. This lib is hilariously bad, i guess i will switch to something else.
+
+		*/
+
+
 
 		if (config["firstlaunch"] = "yes") {
 			firstlaunch == true;
@@ -52,6 +66,10 @@ char fyamlparser::YAMLLoadFiles() {
 		else if (config["firstlaunch"] = "no") {
 			firstlaunch == false;
 		}
+		else {
+			firstlaunch == false;
+		}
+
 
 		if (config["logsEnabled"] = "yes") {
 			logsEnabled == 1;
@@ -59,7 +77,16 @@ char fyamlparser::YAMLLoadFiles() {
 		else if (config["logsEnabled"] = "no") {
 			logsEnabled == 0;
 		}
+		else {
+			logsEnabled == 0;
+		}
 
+		if (config["language"] = "eng") {
+			language == "english";
+		}
+		else {
+			language == "english";
+		}
 		return 0;
 
 

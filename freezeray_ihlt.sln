@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "freezeray_ihlt", "freezeray
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SDL3", "D:\SDL3\VisualC\SDL\SDL.vcxproj", "{81CE8DAF-EBB2-4761-8E45-B71ABCCA8C68}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Resources", "Resources\Resources.vcxproj", "{964B0EE0-6F1A-46FE-ACFF-7FAAD7BE5FF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{81CE8DAF-EBB2-4761-8E45-B71ABCCA8C68}.Release|x64.Build.0 = Release|x64
 		{81CE8DAF-EBB2-4761-8E45-B71ABCCA8C68}.Release|x86.ActiveCfg = Release|Win32
 		{81CE8DAF-EBB2-4761-8E45-B71ABCCA8C68}.Release|x86.Build.0 = Release|Win32
+		{964B0EE0-6F1A-46FE-ACFF-7FAAD7BE5FF2}.Debug|x64.ActiveCfg = Debug|x64
+		{964B0EE0-6F1A-46FE-ACFF-7FAAD7BE5FF2}.Debug|x64.Build.0 = Debug|x64
+		{964B0EE0-6F1A-46FE-ACFF-7FAAD7BE5FF2}.Debug|x86.ActiveCfg = Debug|Win32
+		{964B0EE0-6F1A-46FE-ACFF-7FAAD7BE5FF2}.Debug|x86.Build.0 = Debug|Win32
+		{964B0EE0-6F1A-46FE-ACFF-7FAAD7BE5FF2}.Release|x64.ActiveCfg = Release|x64
+		{964B0EE0-6F1A-46FE-ACFF-7FAAD7BE5FF2}.Release|x64.Build.0 = Release|x64
+		{964B0EE0-6F1A-46FE-ACFF-7FAAD7BE5FF2}.Release|x86.ActiveCfg = Release|Win32
+		{964B0EE0-6F1A-46FE-ACFF-7FAAD7BE5FF2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,3 +1,6 @@
+#define yes true
+#define no false
+
 class fyamlparser {
 public:
 	static int YAMLCheckConfig();
